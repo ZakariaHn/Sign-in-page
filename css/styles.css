@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1rem;
+}
+body {
+  background-image: url("../img/sun.webp");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 30vw;
+  height: 60vh;
+  background-color: rgba(20, 20, 20, 0.8);
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inner {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+.data-field * {
+  margin-top: 2rem;
+  color: rgb(200, 200, 200);
+}
+.microsoft {
+  display: flex;
+  flex-direction: row;
+}
+.microsoft-icons {
+  display: grid;
+  grid-template-columns: 1rem 1rem;
+  row-gap: 0.12rem;
+  column-gap: 0.12rem;
+}
+.microsoft-word {
+  margin-left: 0.5rem;
+  color: rgb(200, 200, 200);
+}
+.menu {
+  background: transparent;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 20%;
+}
+.lines {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: rgb(200, 200, 200);
+  border-radius: 20%;
+  transition: 1s;
+}
+.menu:hover .lines.one {
+  transform: rotate(45deg) translate(6px, 2px);
+  box-shadow: 0 10px rgba(24, 187, 0, 0.8);
+  background-color: rgba(24, 187, 0, 0.8);
+  width: 1.5rem;
+  height: 0.12rem;
+}
+.menu:hover .lines.sec {
+  transform: rotate(-45deg) translate(4px, -8px);
+  box-shadow: 0 8px rgba(24, 187, 0, 0.8);
+  background-color: rgba(24, 187, 0, 0.8);
+  width: 1.5rem;
+  height: 0.12rem;
+}
+.line {
+  width: 100%;
+  height: 0.12rem;
+  background-color: rgb(200, 200, 200);
+  margin-top: 1rem;
+}
+input {
+  height: 2rem;
+  font-size: inherit;
+  text-indent: 0.5rem;
+  background-color: rgba(20, 20, 20, 0.8);
+  border: none;
+}
+
+.red {
+  background-color: rgb(246, 83, 20);
+}
+.green {
+  background-color: rgb(124, 187, 0);
+}
+.blue {
+  background-color: rgb(0, 161, 241);
+}
+.yellow {
+  background-color: rgb(255, 187, 0);
+}
+
+button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 7rem;
+  height: 2rem;
+  color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(20, 20, 20, 0.8);
+  font-size: inherit;
+}
+
+@media screen and (max-width: 1024px) {
+  * {
+    font-size: 1.5rem;
+  }
+  .form {
+    width: 95vw;
+    height: 95vh;
+  }
+  .microsoft-icons {
+    width: 3rem;
+    grid-template-columns: 1.5rem 1.5rem;
+    row-gap: 0.12rem;
+    column-gap: 0.25rem;
+    margin: 0 0.5rem 4rem 0;
+  }
+  .microsoft-icons * {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  input,
+  .line {
+    margin-bottom: 1.5rem;
+  }
+  .menu {
+    width: 3rem;
+    height: 3rem;
+  }
+  .lines {
+    width: 2rem;
+    height: 0.25rem;
+  }
+  .menu:hover .lines.sec {
+    transform: rotate(-45deg) translate(4px, -20px);
+  }
+}
