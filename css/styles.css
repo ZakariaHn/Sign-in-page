@@ -105,15 +105,15 @@ img {
   border-radius: 20%;
   transition: 1s;
 }
-.menu:hover .lines.one {
-  transform: rotate(45deg) translate(6px, 2px);
-  box-shadow: 0 10px rgba(24, 187, 0, 0.8);
+.menu:hover .lines.sec {
+  transform: rotate(45deg) translate(-7px, -20px);
+  box-shadow: 0 8px rgba(24, 187, 0, 0.8);
   background-color: rgba(24, 187, 0, 0.8);
   width: 1.5rem;
   height: 0.12rem;
 }
-.menu:hover .lines.sec {
-  transform: rotate(-45deg) translate(4px, -8px);
+.menu:hover .lines.one {
+  transform: rotate(-45deg) translate(14px, 7px);
   box-shadow: 0 8px rgba(24, 187, 0, 0.8);
   background-color: rgba(24, 187, 0, 0.8);
   width: 1.5rem;
@@ -157,28 +157,24 @@ button {
 /* Responsive for 1024px */
 
 @media screen and (max-width: 1024px) {
-  * {
-    font-size: 1.5rem;
-  }
-
   .form {
-    width: 95vw;
-    height: 95vh;
+    width: 100vw;
+    height: 100vh;
   }
   .microsoft-icons {
     width: 3rem;
-    grid-template-columns: 1.5rem 1.5rem;
+    grid-template-columns: 1rem 1.5rem;
     row-gap: 0.12rem;
     column-gap: 0.25rem;
-    margin: 0 0.5rem 4rem 0;
+    margin-bottom: 4.3rem;
   }
   .microsoft-icons * {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
   }
   input,
   .line {
-    margin-bottom: 1.5rem;
+    width: 100%;
   }
   .menu {
     width: 3rem;
@@ -188,8 +184,11 @@ button {
     width: 2rem;
     height: 0.25rem;
   }
+  .menu:hover .lines.one {
+    transform: rotate(45deg) translate(4px, 7px);
+  }
   .menu:hover .lines.sec {
-    transform: rotate(-45deg) translate(4px, -20px);
+    transform: rotate(-45deg) translate(-7px, -20px);
   }
 }
 
@@ -223,12 +222,12 @@ button {
     height: 2.5rem;
   }
   .menu:hover .lines.one {
-    transform: rotate(45deg) translate(6px, 2px);
+    transform: rotate(45deg) translate(6px, 0);
     width: 1.5rem;
     height: 0.12rem;
   }
   .menu:hover .lines.sec {
-    transform: rotate(-45deg) translate(4px, -8px);
+    transform: rotate(-45deg) translate(6px, -8px);
     width: 1.5rem;
     height: 0.12rem;
   }
