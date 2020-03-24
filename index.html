@@ -10,6 +10,16 @@
     <div class="background-image">
       <img src="./img/sun.webp" />
       <div class="form">
+        <!-- overlay menu onclick  -->
+        <div id="overlay">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
+        </div>
+        <!-- end of overlay menu onclick  -->
+
         <div class="inner">
           <div class="top">
             <div class="top-left">
@@ -23,10 +33,19 @@
                 <div class="microsoft-word"><h1>Microsoft</h1></div>
               </div>
             </div>
-            <div class="menu">
+            <div class="menu" onclick="hideShow()">
               <div class="lines one"></div>
               <div class="lines sec"></div>
             </div>
+            <script>
+              function hideShow() {
+                if (overlay.style.opacity == 0) {
+                  overlay.style.opacity = 1;
+                } else {
+                  overlay.style.opacity = 0;
+                }
+              }
+            </script>
           </div>
           <div class="data-field">
             <h1>
