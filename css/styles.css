@@ -105,7 +105,7 @@ img {
 #overlay {
   height: 100%;
   width: 100%;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(20, 20, 20, 0.7);
   opacity: 0;
   position: fixed;
   display: flex;
@@ -125,6 +125,7 @@ img {
   font-family: serif;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
+  margin-top: 1rem;
 }
 .list li {
   padding: 0.3rem;
@@ -138,9 +139,10 @@ img {
   font-size: 1.7rem;
 }
 
-.lines {
+#lineone,
+#linesec {
   width: 2rem;
-  height: 0.25rem;
+  height: 0.18rem;
   background-color: rgb(200, 200, 200);
   border-radius: 20%;
   transition: 1s;
@@ -151,15 +153,14 @@ img {
   min-width: 130px;
 }
 
-#menu:hover .lines.one {
+#menu:hover #lineone {
   transform: rotate(-45deg) translate(-7px, 7px);
   box-shadow: 0 8px rgba(255, 86, 19, 0.555);
   background-color: rgba(255, 86, 19, 0.555);
   width: 1.5rem;
   height: 0.12rem;
 }
-
-#menu:hover .lines.sec {
+#menu:hover #linesec {
   transform: rotate(45deg) translate(-7px, 1px);
   box-shadow: 0 8px rgba(255, 86, 19, 0.555);
   background-color: rgba(255, 86, 19, 0.555);
@@ -177,7 +178,10 @@ img {
 }
 
 /* User data field  */
-
+#dataField {
+  color: rgb(200, 200, 200);
+  transition: 1s;
+}
 #dataField * {
   margin-top: 2rem;
   color: rgb(200, 200, 200);
@@ -234,10 +238,10 @@ button {
     width: 2rem;
     height: 0.25rem;
   }
-  #menu:hover .lines.sec {
+  #menu:hover #linesec {
     transform: rotate(45deg) translate(0px, -12px);
   }
-  #menu:hover .lines.one {
+  #menu:hover #lineone {
     transform: rotate(-45deg) translate(-10px, -2px);
   }
   .btn {
@@ -277,14 +281,14 @@ button {
     width: 2.5rem;
     height: 2.5rem;
   }
-  #menu:hover .lines.one {
+  #menu:hover #lineone {
     transform: translate(0px, 0px);
     width: 1.5rem;
     height: 0.12rem;
     background-color: rgb(238, 212, 95);
     box-shadow: 0 8px rgba(255, 86, 19, 0.555);
   }
-  #menu:hover .lines.sec {
+  #menu:hover #linesec {
     transform: translate(0px, 2px);
     width: 1.5rem;
     height: 0.12rem;
