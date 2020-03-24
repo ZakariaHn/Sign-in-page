@@ -12,18 +12,20 @@
       <div class="form">
         <!-- overlay menu onclick  -->
         <div id="overlay">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Contact</a>
+          <ul class="list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>portfolio</li>
+            <li>Contact</li>
+          </ul>
         </div>
         <!-- end of overlay menu onclick  -->
 
-        <div class="inner">
+        <div id="inner">
           <div class="top">
             <div class="top-left">
-              <div class="microsoft">
+              <div id="microsoft">
                 <div class="microsoft-icons">
                   <div class="red"></div>
                   <div class="green"></div>
@@ -33,7 +35,7 @@
                 <div class="microsoft-word"><h1>Microsoft</h1></div>
               </div>
             </div>
-            <div class="menu" onclick="hideShow()">
+            <div id="menu" onclick="hideShow()">
               <div class="lines one"></div>
               <div class="lines sec"></div>
             </div>
@@ -41,13 +43,17 @@
               function hideShow() {
                 if (overlay.style.opacity == 0) {
                   overlay.style.opacity = 1;
+                  dataField.style.opacity = 0;
+                  microsoft.style.opacity = 0;
                 } else {
                   overlay.style.opacity = 0;
+                  dataField.style.opacity = 1;
+                  microsoft.style.opacity = 1;
                 }
               }
             </script>
           </div>
-          <div class="data-field">
+          <div id="dataField">
             <h1>
               Sign in
             </h1>
