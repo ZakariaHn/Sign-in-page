@@ -125,7 +125,7 @@ img {
   font-family: serif;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 .list li {
   padding: 0.3rem;
@@ -154,7 +154,7 @@ img {
 }
 
 #menu:hover #lineone {
-  transform: rotate(-45deg) translate(-7px, 7px);
+  transform: rotate(-45deg) translate(-6px, 6px);
   box-shadow: 0 8px rgba(255, 86, 19, 0.555);
   background-color: rgba(255, 86, 19, 0.555);
   width: 1.5rem;
